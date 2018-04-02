@@ -1,1 +1,30 @@
 /* This file is for your main application css. */
+
+/* Phoenix flash messages */
+
+.ui.info.message:empty {
+  display: none;
+}
+
+.ui.error.message:empty {
+  display: none;
+}
+
+.ui.container.page-wrapper {
+  margin-top: 55px;
+}
+
+img.logo {
+  margin-right: 10px !important;
+}
+
+span.help-block {
+  font-size: 1.1em;
+  display: block;
+  background-color: #fff8db;
+  color: #b58105;
+  -webkit-box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
+  box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
+  line-height: 1.4285em;
+  padding: 10px 5px 10px 5px;
+}

@@ -1,0 +1,63 @@
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">
+        <img class="logo" src="/images/logo.png">
+        Elixir Tips
+      </a>
+          <a class="browse item" >
+          Browse Topics
+          <i class="dropdown icon"></i>
+        </a>
+        <div class="ui flowing popup">
+          <div class="ui three column relaxed padded divided grid">
+            <div class="column">
+              <h4 class="ui header">Basics</h4>
+              <div class="ui link list">
+                <a class="item">Cashmere</a>
+                <a class="item">Linen</a>
+                <a class="item">Cotton</a>
+                <a class="item">Viscose</a>
+              </div>
+            </div>
+            <div class="column">
+              <h4 class="ui header">OTP</h4>
+              <div class="ui link list">
+                <a class="item">Small</a>
+                <a class="item">Medium</a>
+                <a class="item">Large</a>
+                <a class="item">Plus Sizes</a>
+              </div>
+            </div>
+            <div class="column">
+              <h4 class="ui header">Libraries</h4>
+              <div class="ui link list">
+                <a class="item">Neutrals</a>
+                <a class="item">Brights</a>
+                <a class="item">Pastels</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+      <a href="#" class="item">Leaderboard</a>
+      <a href="#" class="item">Info</a>
+        <div class="right menu">
+         <%= if logged_in?(@conn) do %>
+         <div class="item">
+           <span class="ui label" id="current_user"><%= current_user(@conn).username %></span>
+         </div>
+         <div class="item">
+       <%= link "Logout", to: session_path(@conn, :delete), method: :delete, class: "ui inverted violet button" %>
+       <% else %>
+        <div class="item">
+        <%= link "Login", to: "/login", class: "ui inverted violet button" %>
+        </div>
+        <% end %>
+       </div>
+      </div>
+
+    </div>
+  </div>
+
+    

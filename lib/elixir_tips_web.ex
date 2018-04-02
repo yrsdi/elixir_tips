@@ -28,8 +28,9 @@ defmodule ElixirTipsWeb do
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/elixir_tips_web/templates",
-                        namespace: ElixirTipsWeb
+      use Phoenix.View,
+        root: "lib/elixir_tips_web/templates",
+        namespace: ElixirTipsWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
@@ -40,6 +41,7 @@ defmodule ElixirTipsWeb do
       import ElixirTipsWeb.Router.Helpers
       import ElixirTipsWeb.ErrorHelpers
       import ElixirTipsWeb.Gettext
+      import ElixirTips.Accounts.Auth, only: [current_user: 1, logged_in?: 1]
     end
   end
 

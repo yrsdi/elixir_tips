@@ -1,0 +1,18 @@
+<br>
+<div class="ui raised very padded text container segment">
+    <h2 class="ui violet image header">
+      <img src="/images/logo.png" class="image">
+      <div class="content">
+        Create a new account
+      </div>
+    </h2>
+    <hr>
+    <br>
+
+<%= render "form.html", Map.put(assigns, :action, user_path(@conn, :create)) %>
+
+<div class="ui message">
+      Already have an account? <%= link "Log in", to: "/login", class: "" %>
+</div>
+
+</div>

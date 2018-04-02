@@ -1,0 +1,36 @@
+<br>
+<div class="ui raised very padded text container segment">
+    <h2 class="ui violet image header">
+      <img src="/images/logo.png" class="image">
+      <div class="content">
+       Log in to your account
+      </div>
+    </h2>
+<hr>
+<br />
+<%= form_for @conn, session_path(@conn, :create), [name: :session, class: "ui form"], fn f -> %>
+
+
+<div class="field">
+  <%= label f, :email %>
+  <%= email_input f, :email, placeholder: "example@aol.com", id: "email", autofocus: "true" %>
+  <%= error_tag f, :email %>
+</div>
+
+<div class="field">
+  <%= label f, :password %>
+  <%= password_input f, :password, autocomplete: "off", placeholder: "password" %>
+  <%= error_tag f, :password %>
+</div>
+
+<br>
+<%= submit "Login", class: "ui fluid large violet submit button", id: "login" %>
+
+<div class="ui error message"></div>
+<% end %>
+
+<div class="ui message">
+      Don't have an account yet? <%= link "Sign up", to: user_path(@conn, :new), class: "" %>
+  </div>
+
+</div>
