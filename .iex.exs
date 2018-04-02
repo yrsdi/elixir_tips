@@ -1,0 +1,1 @@
+alias ElixirTips.Repo

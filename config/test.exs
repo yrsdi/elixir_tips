@@ -17,3 +17,7 @@ config :elixir_tips, ElixirTips.Repo,
   database: "elixir_tips_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :argon2_elixir,
+  t_cost: 1,
+  m_cost: 8
