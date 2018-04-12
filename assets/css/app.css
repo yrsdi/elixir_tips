@@ -3,28 +3,47 @@
 /* Phoenix flash messages */
 
 .ui.info.message:empty {
-  display: none;
+	display: none;
 }
 
 .ui.error.message:empty {
-  display: none;
+	display: none;
 }
 
 .ui.container.page-wrapper {
-  margin-top: 55px;
+	margin-top: 55px;
 }
 
 img.logo {
-  margin-right: 10px !important;
+	margin-right: 10px !important;
 }
 
 span.help-block {
-  font-size: 1.1em;
-  display: block;
-  background-color: #fff8db;
-  color: #b58105;
-  -webkit-box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
-  box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
-  line-height: 1.4285em;
-  padding: 10px 5px 10px 5px;
+	font-size: 1.1em;
+	display: block;
+	background-color: #fff8db;
+	color: #b58105;
+	-webkit-box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
+	box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent;
+	line-height: 1.4285em;
+	padding: 10px 5px 10px 5px;
+}
+
+/* DEVELOPMENT ONLY */
+/* .column {
+	background-color: azure;
+	border: 1px black dotted;
+} */
+/* responsive nav menu */
+
+@media only screen and (max-width: 700px) {
+}
+
+div.ui.massive.visable.violet.message {
+	margin-top: 2.5em;
+}
+
+.ui.footer.segment {
+	margin: 5em 0em 0em;
+	padding: 2em 0em;
 }

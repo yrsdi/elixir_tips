@@ -19,7 +19,10 @@ defmodule ElixirTipsWeb.Router do
     pipe_through(:browser)
 
     get("/", PageController, :index)
+    get("/info", PageController, :info)
+    get("/leaderboard", PageController, :leaderboard)
     resources("/users", UserController)
+
     ## Routes for sessions ##
     get("/login", SessionController, :new)
     post("/login", SessionController, :create)

@@ -45,7 +45,8 @@ defmodule ElixirTips.Mixfile do
       {:credo, "~> 0.8.5", only: [:dev, :test]},
       {:ex_machina, "~> 2.0", only: :test},
       {:comeonin, "~> 4.0"},
-      {:argon2_elixir, "~> 1.2"}
+      {:argon2_elixir, "~> 1.2"},
+      {:exgravatar, "~> 2.0"}
     ]
   end
 

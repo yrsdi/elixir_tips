@@ -1,3 +1,4 @@
+    <!-- Fixed Topbar Menu -->
   <div class="ui fixed inverted menu">
     <div class="ui container">
       <a href="/" class="header item">
@@ -13,35 +14,35 @@
             <div class="column">
               <h4 class="ui header">Basics</h4>
               <div class="ui link list">
-                <a class="item">Cashmere</a>
-                <a class="item">Linen</a>
-                <a class="item">Cotton</a>
-                <a class="item">Viscose</a>
+                <a class="item">Data Types</a>
+                <a class="item">Functions</a>
+                <a class="item">Control Flow</a>
+                <a class="item">Recursion</a>
               </div>
             </div>
             <div class="column">
               <h4 class="ui header">OTP</h4>
               <div class="ui link list">
-                <a class="item">Small</a>
-                <a class="item">Medium</a>
-                <a class="item">Large</a>
-                <a class="item">Plus Sizes</a>
+                <a class="item">Agent</a>
+                <a class="item">GenServer</a>
+                <a class="item">Supervisor</a>
+                <a class="item">Applications</a>
               </div>
             </div>
             <div class="column">
               <h4 class="ui header">Libraries</h4>
               <div class="ui link list">
-                <a class="item">Neutrals</a>
-                <a class="item">Brights</a>
-                <a class="item">Pastels</a>
+                <a class="item">Ecto</a>
+                <a class="item">ExMachina</a>
+                <a class="item">Comeonin</a>
+                <a class="item">Credo</a>
+                 <a class="item">Phoenix</a>
               </div>
             </div>
           </div>
         </div>
-    
-
-      <a href="#" class="item">Leaderboard</a>
-      <a href="#" class="item">Info</a>
+      <%= link "Leaderboard", to: page_path(@conn, :leaderboard), class: "item" %>
+      <%= link "Info", to: page_path(@conn, :info), class: "item" %>
         <div class="right menu">
          <%= if logged_in?(@conn) do %>
          <div class="item">
@@ -59,5 +60,7 @@
 
     </div>
   </div>
+
+
 
     

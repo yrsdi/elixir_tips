@@ -1,12 +1,146 @@
+ 
+<!-- MESSAGE OF THE DAY -->
+<div class="ui massive visable violet message">
+    <i class="close icon"></i>
+    <div class="header">
+    Todays Tip
+    </div>
+    lorem ipsum lorem lorem ipsum lorem ipsum sequitur
+</div>
 
-<h1>Elixir Tips!</h1>
 
 
-<br>
-<hr>
+<div class="ui three column stackable grid">
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/rocket-launch.png">
+    <div class="header">Launch your next project</div>
+    <div class="meta">
+      <span class="category">Find expert advice and mentorship</span>
+    </div>
+    <div class="description">
+      <p>something else here goes</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+      <div class="center aligned button">
+     <a class="ui primary button">Learn more</a>
+    </div>
 
+  </div>
+</div>
+  </div><!-- / end column 1-->
 
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/youtube.png">
+    <div class="header">Learn from videos</div>
+    <div class="meta">
+      <span class="category">Explore dozens of Elixir</span>
+    </div>
+    <div class="description">
+      <p>something else here goes</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+      <div class="center aligned button">
+     <a class="ui primary button">Learn more</a>
+    </div>
 
+  </div>
+</div>
+  </div> <!-- / end column 2 -->
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/browser.png">
+    <div class="header">Read curated articles</div>
+    <div class="meta">
+      <span class="category">High quality reading material</span>
+    </div>
+    <div class="description">
+      <p>something else here goes</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+    <div class="center aligned button">
+     <a class="ui primary button">Learn more</a>
+    </div>
+  </div>
+</div>
+  </div><!-- / end column 3 -->
+</div>
+<!-- space between grid 1 and 2 -->
+<div class="ui three column stackable grid">
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/hire.png">
+    <div class="header">Hire an expert</div>
+    <div class="meta">
+      <span class="category">Find the perfect hire</span>
+    </div>
+    <div class="description">
+      <p>This feature is not yet implemented</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+      <div class="center aligned button">
+     <a class="ui primary disabled button">Learn more</a>
+    </div>
+
+  </div>
+</div>
+  </div><!-- / end column 4-->
+
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/invention.png">
+    <div class="header">Share an idea</div>
+    <div class="meta">
+      <span class="category">Help innovate and inspire</span>
+    </div>
+    <div class="description">
+      <p>something else here goes</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+      <div class="center aligned button">
+     <a class="ui primary button">Learn more</a>
+    </div>
+
+  </div>
+</div>
+  </div> <!-- / end column 5 -->
+  <div class="column">
+    <div class="ui fluid card">
+    <div class="content">
+<img class="left floated ui mini image" src="/images/icons/line-graphic.png">
+    <div class="header">Machine Learning Big Data</div>
+    <div class="meta">
+      <span class="category">Contribute to an exciting field</span>
+    </div>
+    <div class="description">
+      <p>something else here goes</p>
+      <p>words product fast elite</p>
+    </div>
+  </div>
+  <div class="extra content">
+    <div class="center aligned button">
+     <a class="ui primary button">Learn more</a>
+    </div>
+  </div>
+</div>
+  </div><!-- / end column 6 -->
+</div>
 
 
 

@@ -10,18 +10,17 @@ defmodule ElixirTips.AccountsTest do
     @valid_attrs %{
       avatar: "some avatar",
       email: "john-deere@aol.com",
-      password_hash: "abc123",
+      password_pash: "abc123",
       potions: 42,
       username: "bobby"
     }
     @update_attrs %{
       avatar: "newimage.png",
       email: "updated-email@email.com",
-      password_hash: "newpassword_hash",
       potions: 43,
       username: "bobby2"
     }
-    @invalid_attrs %{avatar: nil, email: nil, password_hash: nil, potions: nil, username: nil}
+    @invalid_attrs %{avatar: nil, email: nil, password: nil, potions: nil, username: nil}
 
     def user_fixture(attrs \\ %{}) do
       {:ok, user} =
@@ -44,11 +43,9 @@ defmodule ElixirTips.AccountsTest do
 
     test "create_user/1 with valid data creates a user" do
       assert {:ok, %User{} = user} = Accounts.create_user(@valid_attrs)
-      assert user.avatar == "some avatar"
-      assert user.email == "some email"
-      assert user.password_hash == "some password_hash"
+      assert user.email == "john-deere@aol.com"
       assert user.potions == 42
-      assert user.username == "some username"
+      assert user.username == "bobby"
     end
 
     test "create_user/1 with invalid data returns error changeset" do
@@ -59,17 +56,9 @@ defmodule ElixirTips.AccountsTest do
       user = user_fixture()
       assert {:ok, user} = Accounts.update_user(user, @update_attrs)
       assert %User{} = user
-      assert user.avatar == "some updated avatar"
-      assert user.email == "some updated email"
-      assert user.password_hash == "some updated password_hash"
+      assert user.email == "updated-email@email.com"
       assert user.potions == 43
-      assert user.username == "some updated username"
-    end
-
-    test "update_user/2 with invalid data returns error changeset" do
-      user = user_fixture()
-      assert {:error, %Ecto.Changeset{}} = Accounts.update_user(user, @invalid_attrs)
-      assert user == Accounts.get_user!(user.id)
+      assert user.username == "bobby2"
     end
 
     test "delete_user/1 deletes the user" do
